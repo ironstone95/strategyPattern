@@ -13,8 +13,8 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         IRepository repository = new RepositoryImpl(
-                new NetworkPostWriter(WebService.getInstance().getPostAPI()),
-                new FilePostReader("unitTest.json"),
+                new FilePostWriter("networkPosts.json"),
+                new NetworkPostReader(WebService.getInstance().getPostAPI()),
                 new LogExceptionHandler());
 
         List<Post> posts = repository.readPosts();
@@ -22,7 +22,7 @@ public class Main {
             for (Post post : posts) {
                 System.out.println(post);
             }
-            repository.writePost(posts.get(0));
+            repository.writePosts(posts);
         }
     }
 }
