@@ -14,6 +14,8 @@ Also, in the program there are five classes that implements a specific interface
 4. FilePostReader -> Reads post or posts from a file.
 5. LogExceptionHandler -> Handles exceptions only by logging them using Exception::printStackTrace
 
+Currently, the program fetches data from the network and writes to a file.
+
 # Features
 In the repository each service can be replaced with another one. In example, the posts can be read from API and written to a file. Also, these behaviors can be changed at runtime.
 
