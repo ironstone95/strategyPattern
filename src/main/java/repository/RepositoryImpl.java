@@ -9,13 +9,25 @@ import java.io.IOException;
 import java.util.List;
 
 public class RepositoryImpl implements IRepository {
-    private final IPostWriter writer;
-    private final IPostReader reader;
-    private final IExceptionHandler errorHandler;
+    private IPostWriter writer;
+    private IPostReader reader;
+    private IExceptionHandler errorHandler;
 
     public RepositoryImpl(IPostWriter writer, IPostReader reader, IExceptionHandler errorHandler) {
         this.writer = writer;
         this.reader = reader;
+        this.errorHandler = errorHandler;
+    }
+
+    public void setWriter(IPostWriter writer) {
+        this.writer = writer;
+    }
+
+    public void setReader(IPostReader reader) {
+        this.reader = reader;
+    }
+
+    public void setErrorHandler(IExceptionHandler errorHandler) {
         this.errorHandler = errorHandler;
     }
 
