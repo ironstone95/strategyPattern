@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="NetworkTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-15T21:42:48" hostname="Kerems-MacBook-Air.local" time="0.99">
+  <properties/>
+  <testcase name="testPostApiPostList()" classname="NetworkTest" time="0.99"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
